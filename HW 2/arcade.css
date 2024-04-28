@@ -1,0 +1,30 @@
+.diceContainer {
+    display: flex;
+}
+
+
+.dice {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+}
+
+.diceOne {
+    width: 15px;
+    height: 15px; 
+    background-color: black;
+    border-radius: 50%;
+
+    /*Dice pattern*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    align-self: center;
+}
+
+.buttonRoll {
+    margin-top: 15px;
+}
