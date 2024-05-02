@@ -66,7 +66,7 @@ function randomizeDice(diceContainer, numberOnDice) {
 
 const diceContainer = document.querySelector(".dice-container");
 const btnRollDice = document.querySelector(".btn-roll-dice");
-
+//let rollBtn = document.querySelector("#btn-roll-dice");
 
 
 btnRollDice.addEventListener("click", () => {
@@ -91,3 +91,10 @@ function changeDiceNumber() {
     }
 }
 
+//doesn't work yet
+function disableButton() {
+    btnRollDice.disabled = true;
+    setTimeout(function(){
+        btnRollDice.disabled = false;
+    }, 500);
+}

@@ -1,5 +1,17 @@
+body{
+    text-align: center;
+    background-color: lightgreen;
+}
+
 .dice-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 400px;
+    padding: 35px;
+    margin: 50px auto;
+    border-radius: 10px;
 }
 
 
@@ -9,7 +21,7 @@
     position: relative;
     margin: 5px;
     border-radius: 10px;
-    box-shadow: 0 0 15px black;
+    box-shadow: 0 0 7px black;
 }
 
 .dice-dot {
@@ -32,6 +44,18 @@
     margin-top: 15px;
 }
 
-/* #gameContainer {
-    background-color: aqua;
-} */
+#gameContainer {
+    background-color: gold;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    margin: 0px auto;
+    border-radius: 10px;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    margin: 0 auto;
+    font-size: 20px;
+}
