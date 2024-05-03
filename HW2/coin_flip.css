@@ -1,0 +1,111 @@
+body {
+    height: 100%;
+    background: lightblue;
+    text-align: center;
+}
+
+.container{
+    background: white;
+    width: 400px;
+    padding: 35px;
+    margin: 50px auto;
+    border-width: 10px;
+    border-style: groove;
+    border-color: goldenrod;
+}
+
+.buttonBox{
+    background: white;
+    width: 400px;
+    padding: 35px;
+    margin: 50px auto;
+    text-align: center;
+    border-width: 10px;
+    border-style: groove;
+    border-color: goldenrod;
+}
+
+.coin {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    margin: 32px auto;
+    transform-style: preserve-3d;
+}
+
+.coin img{
+    width: 100%;
+}
+
+.heads {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.tails {
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+}
+
+/* animation for heads */
+@keyframes flipHeads{
+    0%{
+        transform: rotateX(0);
+    }
+
+    100%{
+        transform: rotateX(1080deg);
+    }
+}
+
+/* animation for tails */
+@keyframes flipTails{
+    0%{
+        transform: rotateX(0);
+    }
+
+    100%{
+        transform: rotateX(900deg);
+    }
+}
+
+.count{
+    display: flex;
+    color: black;
+    font-weight: 500;
+    padding: 20px;
+    margin-top: 55px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 15px gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-width: 10px;
+    border-style: groove;
+    border-color: silver;
+}
+
+.count p:nth-last-child(1) {
+    margin-left: 50%;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+#flipButton {
+    background: goldenrod;
+    color: black;
+}
+
+#flipButton:disabled {
+    background: gray;
+    border-color: black;
+}
+
+#resetButton {
+    background: beige;
+    color: black;
+}
